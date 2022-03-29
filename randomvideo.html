@@ -5,14 +5,14 @@
     <title>The Simpsons</title>
 </head>
 <body>
-    <video preload="none" controls playsinline loop muted id="video">
-        <source id="homevideo" src="/images/media/Video-" type="video/mp4">
-        </video>
+    <video preload="none" controls playsinline loop muted id="video-frame">
+        <source id="video" src="/media/Video-" type="video/mp4">
+    </video>
         
-        <script>
+    <script>
         let video = document.getElementById('video');
         let number = Math.floor(Math.random() * 3) + 1;
         video.src += number +'.mp4';
-        </script>
+    </script>
 </body>
 </html>
